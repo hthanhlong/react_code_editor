@@ -1,27 +1,27 @@
 import { createContext, useState } from "react"
 
 type ContextType = {
-  html: null
+  html: string
   setHtml: any
-  css: null
+  css: string
   setCss: any
-  js: null
+  js: string
   setJs: any
 }
 
 export const DataContext = createContext<ContextType>({
-  html: null,
+  html: "",
   setHtml: () => {},
-  css: null,
+  css: "",
   setCss: () => {},
-  js: null,
+  js: "",
   setJs: () => {},
 })
 
 const DataProvider = ({ children }: { children: React.ReactNode }) => {
-  const [html, setHtml] = useState(null)
-  const [js, setJs] = useState(null)
-  const [css, setCss] = useState(null)
+  const [html, setHtml] = useState("")
+  const [js, setJs] = useState("")
+  const [css, setCss] = useState("")
 
   return (
     <DataContext.Provider
