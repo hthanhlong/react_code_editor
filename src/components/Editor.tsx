@@ -1,5 +1,4 @@
-const Editor = () => {
-  return <div>Editor</div>
+function Editor() {
+  return <div>hello world</div>
 }
-
 export default Editor
