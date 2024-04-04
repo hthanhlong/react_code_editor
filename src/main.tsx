@@ -1,14 +1,14 @@
-import * as React from "react"
-import * as ReactDOM from "react-dom/client"
-import { RouterProvider } from "react-router-dom"
-import router from "./Routes"
-import "./index.css"
-import DataProvider from "./context/DataProvider"
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <DataProvider>
-      <RouterProvider router={router} />
-    </DataProvider>
-  </React.StrictMode>
-)
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
