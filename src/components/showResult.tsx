@@ -22,7 +22,7 @@ const Result = () => {
   }, [html, css, js]);
 
   return (
-    <div className="flex-1 p-2 bg-[#282c34] m-2 rounded flex flex-col">
+    <div className="flex-1 p-2 bg-[#282c34] m-2 rounded flex flex-col h-full max-sm:min-h-screen">
       <h2 className="text-lg font-semibold mb-2 text-white">Result</h2>
       <iframe
         className="border bg-[#282c34] border-gray-700 rounded flex-1"

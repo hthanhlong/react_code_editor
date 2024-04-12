@@ -21,7 +21,7 @@ const EditorArea = () => {
   }, []);
 
   return (
-    <div className="max-h-[500px] h-full p-2">
+    <div className="p-2">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
         {/* Html Editor  */}
         <div className="bg-[#282c34] p-4 rounded-lg shadow">

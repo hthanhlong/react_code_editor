@@ -9,8 +9,7 @@ function Editor({ onChange, language }: typeEditor) {
   return (
     <div>
       <CodeMirror
-        className="text-sm border-gray-700 border"
-        height="342px"
+        className="text-sm border-gray-700 border h-[342px] max-sm:h-[200px]"
         theme="dark"
         extensions={[language(true)]}
         onChange={onChange}
