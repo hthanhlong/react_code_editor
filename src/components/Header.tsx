@@ -1,7 +1,7 @@
 const Header = () => {
   return (
-    <header className="bg-black h-14 text-cyan-100">
-      <span className="absolute top-6 left-5">CodePin</span>
+    <header className="bg-black text-cyan-100 py-4 text-center">
+      <span className="text-2xl font-bold">Code Pin</span>
     </header>
   );
 };

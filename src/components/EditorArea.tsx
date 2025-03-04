@@ -21,22 +21,22 @@ const EditorArea = () => {
   }, []);
 
   return (
-    <div className="p-2">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+    <div>
+      <div className="grid grid-cols-1 lg:grid-cols-3">
         {/* Html Editor  */}
-        <div className="bg-[#282c34] p-4 rounded-lg shadow">
+        <div className="bg-[#282c34] p-2">
           <h2 className="text-md font-semibold mb-2 text-white">HTML</h2>
           <Editor onChange={onChangeHtml} language={html} />
         </div>
 
         {/* Css Editor  */}
-        <div className="bg-[#282c34] p-4 rounded-lg shadow">
+        <div className="bg-[#282c34] p-2">
           <h2 className="text-md font-semibold mb-2 text-white">CSS</h2>
           <Editor onChange={onChangeCss} language={css} />
         </div>
 
         {/* JavaScript Editor  */}
-        <div className="bg-[#282c34] p-4 rounded-lg shadow">
+        <div className="bg-[#282c34] p-2">
           <h2 className="text-md font-semibold mb-2 text-white">JavaScript</h2>
           <Editor onChange={onChangeJavaScript} language={javascript} />
         </div>

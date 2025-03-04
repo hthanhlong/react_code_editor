@@ -5,7 +5,7 @@ import ShowResult from "../components/showResult";
 
 const Home = () => {
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col">
+    <div className="min-h-screen w-full lg:w-9/12 mx-auto flex flex-col p-3">
       <Header />
       <EditorArea />
       <ShowResult />
